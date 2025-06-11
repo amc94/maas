@@ -1,3 +1,5 @@
+# Copyright 2025 Canonical Ltd.
+# See LICENSE file for licensing details.
 resource "local_sensitive_file" "maas_credentials" {
   content = yamlencode({
     credentials = {

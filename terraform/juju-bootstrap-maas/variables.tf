@@ -1,3 +1,5 @@
+# Copyright 2025 Canonical Ltd.
+# See LICENSE file for licensing details.
 variable "maas_api_url" {
   type        = string
   description = "MAAS API URL"
