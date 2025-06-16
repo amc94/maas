@@ -8,7 +8,7 @@ variable "maas_api_url" {
 variable "maas_api_key" {
   type        = string
   description = "MAAS OAuth key for Juju"
-  senesitive  = true
+  sensitive   = true
 }
 
 variable "controller_name" {
