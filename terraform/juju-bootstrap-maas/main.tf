@@ -52,7 +52,7 @@ resource "null_resource" "juju_bootstrap_controller" {
       juju bootstrap --credential maas-creds maas-cloud ${var.controller_name} ${var.bootstrap_args} --constraints ${var.constraints}
 
       if ${var.enable_ha}; then
-        juju enable-ha -n ${var.number_of_ha} --constraints ${var.constraints}
+        juju enable-ha -n ${var.number_of_ha_units} --constraints ${var.constraints}
     EOT
     interpreter = ["/bin/bash", "-c"]
   }
