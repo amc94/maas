@@ -53,6 +53,7 @@ resource "null_resource" "juju_bootstrap_controller" {
 
       if ${var.enable_ha}; then
         juju enable-ha -n ${var.number_of_ha_units} --constraints ${var.constraints}
+      fi
     EOT
     interpreter = ["/bin/bash", "-c"]
   }
